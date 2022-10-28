@@ -1,0 +1,20 @@
+%title {
+  text-transform: uppercase;
+}
+
+.title {
+  &-small {
+    @extend %title;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.text {
+  &-primary {
+    color: var(--primary);
+  }
+  &-hint {
+    color: var(--hint);
+  }
+}
