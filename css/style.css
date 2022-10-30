@@ -54,6 +54,7 @@ img {
 }
 .text-hint {
   color: var(--hint);
+  font-style: italic;
 }
 
 .mb-5 {
@@ -119,6 +120,11 @@ header h1 span {
   display: inline-block;
   animation: bounce 1s;
 }
+header h1 span:hover {
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: all 0.2s;
+}
 @media only screen and (max-width: 480px) {
   header h1 {
     font-size: 4rem;
@@ -134,6 +140,8 @@ header p {
   padding: 4rem;
   background: var(--background);
   border-right: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 480px) {
   .picture {
